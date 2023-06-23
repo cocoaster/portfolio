@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "title": "booki",
+        "mockups": ["./BookiMobile.png", "./BookiDesktop.png", "./BookiTablett.png"],
+        "mission": "Transformation d'une maquette en site web avec HTML & CSS"
+    },
+    {
+        "id": 2,
+        "title": "Ohmyfood",
+        "mockups": ["./OhmyfoodMobile.png", "./OhmyfoodDesktop.png", "./OhmyfoodTablett.png"],
+        "mission": "Dynamisation d'une page web avec des animations CSS, Utilisation de SASS, Création du loader et de la version desktop"
+    },
+    {
+        "id": 3,
+        "title": "Agence de Web Design La Panthère",
+        "mockups": ["./LaPanthereMobile.png", "./LaPanthereDesktop.png", "./LaPanthereTablett.png"],
+        "mission": "Optimisation du référencement d'un site web existant grâce à la mise en place de bonnes pratiques SEO"
+    },
+    {
+        "id": 4,
+        "title": "Kanap",
+        "mockups": ["./KanapMobile.png", "./KanapDesktop.png", "./KanapTablett.png"],
+        "mission": "Intégration dynamique des éléments d'un site de e-commerce avec javascript: utilisation de la mise en cache et de l'API pour gérer les données du panier et la commande"
+    },
+    {
+        "id": 5,
+        "title": "API Piiquante",
+        "mockups": ["./PiiquanteMobile.png", "./PiiquanteDesktop.png", "./PiiquanteTablett.png"],
+        "mission": "Construction du backend d'une API sécurise d'avis gastronomiques avec Node.js, express, bcrypt, MongoDb"
+    },
+    {
+        "id": 6,
+        "title": "Kasa",
+        "mockups": ["./KasaMobile.png", "./KasaDesktop.png", "./KasaTablett.png"],
+        "mission": "Création d'une API de location immobilière avec React"
+    }
+    
+]

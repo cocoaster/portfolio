@@ -1,0 +1,10 @@
+nav {
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 10;
+    &:active{
+        color: green;
+
+    }
+  }
+  

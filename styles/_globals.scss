@@ -1,0 +1,20 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+.items > .sub-items {
+    display: none;
+    &:hover{
+        display: block
+    }
+    
+
+}
+
+// .sub-items{
+//     padding: 5px 0px;
+// }
