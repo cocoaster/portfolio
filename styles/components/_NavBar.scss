@@ -3,8 +3,52 @@ nav {
     padding: 1rem;
     z-index: 10;
     &:active{
-        color: green;
+        color: rgb(251, 251, 251);
 
     }
   }
-  
+
+  .nav-active {
+    color: #21b295;
+  }
+  ul:hover li:not(:hover) {
+    opacity: .5;
+  }
+  ul:hover li:hover {
+    color:  #21b295;
+  }
+
+  .nav-portfolio {
+    cursor: pointer;
+    display: flex;
+    // padding-right: 6rem;
+    transition: .5s;
+
+    &:hover .nav-projects,
+    .nav-projects:hover {
+
+      visibility: visible;
+      opacity: 1;
+
+      li {
+        transform: rotatey(0deg)
+      }
+    }
+
+    .nav-projects {
+      position: absolute;
+      visibility: hidden;
+      opacity: 0;
+      padding: 0 40px;
+      width: 300px;
+      transform: translateX(-140px);
+      transition: .3s ;
+      perspective: 500px;
+
+      li {
+        transform: rotatey(30deg) scaleX(1.2);
+        transform-origin: center;
+        transition: .3s;
+      }
+    }
+  }
