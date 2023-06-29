@@ -26,7 +26,10 @@ const NavBar = () => {
   const handlePortfolioSubMenu = () => {
     setShowPortfolioSubMenu(!showPortfolioSubMenu);
   };
-
+  const handleMenuClick = () => {
+    toggleMenu();
+    handlePortfolioSubMenu();
+  };
   return ( 
     <header >
       <div className="navigation">
@@ -108,7 +111,7 @@ const NavBar = () => {
             </li>
           </ul>
           {/* Hamburger Menu */}
-          <div className="hamburger flex md:hidden ">
+          <div className="hamburger flex md:hidden " >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className={`w-6 h-6  cursor-pointer ${isMenuOpen ? 'hidden' : ''}`}
@@ -146,7 +149,7 @@ const NavBar = () => {
                 isMenuOpen ? "flex flex-col   pt-0 mt-0 p-0 " : "hidden"
               }  hamburgerMenu  md:hidden cursor-pointer`}
             >
-              <li onClick={toggleMenu}
+              <li onClick={handleMenuClick} 
   >
                 <Link href="/" >
                   HOME
@@ -154,7 +157,7 @@ const NavBar = () => {
               </li>
               <li onClick={handlePortfolioSubMenu}
               >
-                <span className={`${showPortfolioSubMenu ? "bg border-top" : "" } flex`}
+                <span  className={`${showPortfolioSubMenu ? "bg border-top" : "" } flex`}
               >
                   PORTFOLIO
                   <span className={`${showPortfolioSubMenu ? "openPortfolio-arrow" : "" } portfolio-arrow`} 
@@ -173,27 +176,27 @@ const NavBar = () => {
                       <Link href="/PORTFOLIO/PROJECT-1" className={currentRoute === "/PORTFOLIO/PROJECT-1" 
         ? "nav-active" 
         : ""}>
-                        PROJECT 1
+                     <span className="bullet-point"> ✦ </span>    PROJECT 1
                       </Link>
                     </li>
                     <li  onClick={toggleMenu}>
                       <Link href="/PORTFOLIO/PROJECT-2">
-                        PROJECT 2
+                      <span className="bullet-point"> ✦ </span> PROJECT 2
                       </Link>
                     </li>
                     <li  onClick={toggleMenu}>
                       <Link href="/PORTFOLIO/PROJECT-3">
-                        PROJECT 3
+                      <span className="bullet-point"> ✦ </span> PROJECT 3
                       </Link>
                     </li>
                     <li  onClick={toggleMenu}>
                       <Link href="/PORTFOLIO/PROJECT-4">
-                        PROJECT 4
+                      <span className="bullet-point"> ✦ </span> PROJECT 4
                       </Link>
                     </li>
                     <li  onClick={toggleMenu}>
                       <Link href="/PORTFOLIO/PROJECT-5">
-                        PROJECT 5
+                      <span className="bullet-point"> ✦ </span>      PROJECT 5
                       </Link>
                     </li>
                   </ul>
