@@ -2,39 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  background-image: url("../public/photo.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 0 0;
 
-}
- body {
-  overflow-x: hidden;
- }
-
-main {
-  position: relative;
-  background-image: url("../public/background.png");
-  background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
- background-attachment: fixed;
- height: 100%;
-
-}
-
-/* navMenu{
-  width: 20%;
-} */
 
 @media only screen and (max-width: 767px) {
   
-  :root {
+  /* :root {
    background-position: -70px 0px;
    height: 100%;
-    }
+    } */
 
 }

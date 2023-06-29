@@ -5,6 +5,6 @@ import Footer from './footer';
 export {
     Logo,
     NavBar,
-    Footer
+    Footer,
 }
 

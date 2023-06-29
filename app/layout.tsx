@@ -21,11 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="relative">
+      <body >
+      <NavBar />
+
         <main >
         <Mouse />
         {/* <Logo/> */}
-        <NavBar />
           {children}
           <Footer />
         </main>

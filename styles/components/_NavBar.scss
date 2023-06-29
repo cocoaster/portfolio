@@ -1,54 +1,112 @@
-nav {
-    cursor: pointer;
-    padding: 1rem;
-    z-index: 10;
-    &:active{
-        color: rgb(251, 251, 251);
+ header{
+ width: 100%;
+ height: 100px;
+ position : fixed;
+ }
 
-    }
-  }
+.navigation{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .nav-active {
-    color: #21b295;
-  }
-  ul:hover li:not(:hover) {
-    opacity: .5;
-  }
-  ul:hover li:hover {
-    color:  #21b295;
-  }
+nav{
+  cursor: pointer;
+  padding: 1rem;
+  color: $color1;
+}
+ .hamburger{
+ } 
+ .hamburger-menu{
+ position: absolute;
 
-  .nav-portfolio {
-    cursor: pointer;
-    display: flex;
+margin-top:70px;
+ left: 0;
+ right: 0;
+ transform: translateX(40px);
+ padding-left: 25px;
+ padding-top: 25px;
+ padding-bottom: 25px;
+ background-color: #445d5a;
+ width: 100%;
+ line-height: 80px;
+ color: $color2;
+
+ }
+ .bg{
+    border-top: #5c7f7b solid 7px;
+    background-color: $color3;
+    color: #0d383d;
+  margin-left: -25px;
+  padding-left: 49px;
+ }
+
+ li:hover {
+  opacity: 0.6;  
+  }
+.portfolio-arrow{
+  margin-top: 0.1rem;
+  margin-left: 50px;
+  transform: rotate(-90deg);
+}
+.openPortfolio-arrow{
+  margin-top: 2.1rem;
+  margin-left: 50px;
+  transform: rotate(0deg);
+}
+
+
+
+
+
     // padding-right: 6rem;
-    transition: .5s;
-
-    &:hover .nav-projects,
-    .nav-projects:hover {
-
-      visibility: visible;
-      opacity: 1;
-
-      li {
-        transform: rotatey(0deg)
-      }
-    }
-
     .nav-projects {
       position: absolute;
       visibility: hidden;
       opacity: 0;
       padding: 0 40px;
       width: 300px;
-      transform: translateX(-140px);
       transition: .3s ;
       perspective: 500px;
 
-      li {
-        transform: rotatey(30deg) scaleX(1.2);
-        transform-origin: center;
-        transition: .3s;
-      }
+    
+    
+    &:hover  {
+
+      visibility: visible;
+      opacity: 1;
+
+    
     }
   }
+
+    .mobileNav-projects {
+        display: block;
+        opacity: 1;
+        padding: 0 40px;
+        width: 300px;
+  
+      
+      }
+
+       // Media query pour les tablettes en mode portrait (largeur minimale de 768px)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .nav-active {
+    color: #5c7f7b;
+  }
+} 
+
+// Media queries pour les tablettes (largeur maximale de 1024px)
+@media only screen and (max-width: 1024px) {
+  // Placez vos styles pour les tablettes ici
+}
+
+// Media queries pour les écrans de bureau de taille moyenne (largeur minimale de 1025px)
+@media only screen and (min-width: 1025px) {
+  // Placez vos styles pour les écrans de bureau de taille moyenne ici
+}
+
+// Media queries pour les écrans de bureau de grande taille (largeur minimale de 1280px)
+@media only screen and (min-width: 1280px) {
+  // Placez vos styles pour les écrans de bureau de grande taille ici
+}

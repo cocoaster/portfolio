@@ -1,19 +1,79 @@
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    background-image: url("../public/green_mobile_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 0 0;
+    height: 100%;
+    width: 100%;
+    display: table;
+  
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    display: table;
+    position: relative;    
+   }
+
+   main{
+    margin-top: 100px;
+   }
+ 
+   $color1: #0a2f2a;
+   $color2: #9fdad3;
+   $color3: #7daca6;
+
+//   main {
+//     position: relative;
+//     background-image: url("../public/green_mobile_background.png");
+//     background-repeat: no-repeat;
+//    background-size: cover;
+//    background-position: center;
+//    background-attachment: fixed;
+//    height: 100%;
+  
+//   }
+  
+  /* navMenu{
+    width: 20%;
+    
   }
   
-.items > .sub-items {
-    display: none;
-    &:hover{
-        display: block
-    }
-    
-
-}
+  */
+  // Media query pour les tablettes en mode portrait (largeur minimale de 768px)
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    // Placez vos styles spécifiques pour les tablettes en mode portrait ici
+  } 
+  
+  // Media queries pour les tablettes (largeur maximale de 1024px)
+@media only screen and (max-width: 1024px) {
+    // Placez vos styles pour les tablettes ici
+  }
+  
+  // Media queries pour les écrans de bureau de taille moyenne (largeur minimale de 1025px)
+  @media only screen and (min-width: 1025px) {
+    // Placez vos styles pour les écrans de bureau de taille moyenne ici
+  }
+  
+  // Media queries pour les écrans de bureau de grande taille (largeur minimale de 1280px)
+  @media only screen and (min-width: 1280px) {
+    // Placez vos styles pour les écrans de bureau de grande taille ici
+  }
+ 
+  
 
 // .sub-items{
 //     padding: 5px 0px;

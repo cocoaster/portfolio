@@ -5,17 +5,17 @@ import Link from "next/link";
 
 const Logo = () => {
     return (
-        <div className="flex justify-start z-10">
+        <div className=" mt-8 ">
           <Link href="/" className="object-contain">
-        <Image
-          src="dharma.svg"
-          alt="Ometheo Logo"
-          width={50}
-          height={50}
-          className="logo z-10"
-          priority={true}
-        />
-      </Link>   
+            <Image
+              src="dharma.svg"
+              alt="Ometheo Logo"
+              width={50}
+              height={50}
+              className="logo "
+              priority={true}
+            />
+          </Link>   
         </div>
     );
 };

@@ -1,9 +1,14 @@
 
 const PROJECT1 = () => {
     return (
-        <div>
-            project one
-        </div>
+        <>
+            <main>
+                <div>
+                    <h1>project one</h1>
+                </div>
+            </main>
+        </>
+        
     );
 };
 

@@ -1,9 +1,38 @@
+:root {
+  background-image: url("../public/green_mobile_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 0 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* navMenu{
+  width: 20%;
+
+}
+
+*/
+.logo {
+  position: absolute;
+  top: 2rem;
+  padding-left: 1rem;
+}
+
 .nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  color: #0a2f2a;
+}
+
+.hamburger {
+  color: #0a2f2a;
 }
 
 .items > .sub-items {
@@ -13,28 +42,14 @@
   display: block;
 }
 
-.bgAbout {
-  background-color: #093132;
-  opacity: 0.7;
-}
-
-.logo {
-  position: absolute;
-  top: 2rem;
-  padding-left: 1rem;
-}
-
 nav {
   cursor: pointer;
   padding: 1rem;
   z-index: 10;
 }
-nav:active {
-  color: rgb(251, 251, 251);
-}
 
 .nav-active {
-  color: #21b295;
+  color: #116353;
 }
 
 ul:hover li:not(:hover) {
@@ -59,7 +74,8 @@ ul:hover li:hover {
 .nav-portfolio .nav-projects:hover li {
   transform: rotatey(0deg);
 }
-.nav-portfolio .nav-projects {
+
+.nav-projects {
   position: absolute;
   visibility: hidden;
   opacity: 0;
@@ -69,7 +85,22 @@ ul:hover li:hover {
   transition: 0.3s;
   perspective: 500px;
 }
-.nav-portfolio .nav-projects li {
+.nav-projects li {
+  transform: rotatey(30deg) scaleX(1.2);
+  transform-origin: center;
+  transition: 0.3s;
+}
+
+.mobileNav-projects {
+  position: absolute;
+  opacity: 1;
+  padding: 0 40px;
+  width: 300px;
+  transform: translateX(-140px);
+  transition: 0.3s;
+  z-index: 30;
+}
+.mobileNav-projects li {
   transform: rotatey(30deg) scaleX(1.2);
   transform-origin: center;
   transition: 0.3s;
