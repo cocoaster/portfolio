@@ -2,8 +2,8 @@ import Image from "next/image"
 const About = () => {
     return (
         <>
-            <main className="-z-50  relative">
-                <div className="bgAbout text-white absolute top-96 mx-1 pt-10 px-8 md:px-20 md:mx-32  md:pt-10 pb-14">
+            
+                <div className="bgAbout text-white  mx-1 pt-10 px-8 md:px-20 md:mx-32  md:pt-10 pb-14">
           
                     <h1 className="text-xl font-bold">Who am I?</h1> 
                     <br />
@@ -18,7 +18,7 @@ and to put myself at the service of the projects entrusted to me.
                     </p>
                     </div>
 
-                </main>
+               
 </>     
     );
 };

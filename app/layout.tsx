@@ -28,8 +28,9 @@ export default function RootLayout({
         <Mouse />
         {/* <Logo/> */}
           {children}
-          <Footer />
+         
         </main>
+        <Footer />
       </body>
     </html>
   )

@@ -1,0 +1,10 @@
+footer{
+    height: 1;
+    display: table-row;
+
+}
+
+.footer-logo{
+    max-width: 100%; /* L'image ne dépassera pas la largeur de son conteneur */
+  height: auto;
+}

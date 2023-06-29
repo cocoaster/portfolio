@@ -55,8 +55,13 @@
   */
   // Media query pour les tablettes en mode portrait (largeur minimale de 768px)
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    // Placez vos styles spécifiques pour les tablettes en mode portrait ici
-  } 
+  :root{
+    background-image: url("../public/green_tablet_background.png");
+    background-size: contain;
+    background-position: left;
+
+  }
+    } 
   
   // Media queries pour les tablettes (largeur maximale de 1024px)
 @media only screen and (max-width: 1024px) {
@@ -65,9 +70,10 @@
   
   // Media queries pour les écrans de bureau de taille moyenne (largeur minimale de 1025px)
   @media only screen and (min-width: 1025px) {
-    // Placez vos styles pour les écrans de bureau de taille moyenne ici
+    :root{
+      background-image: url("../public/green_desktop_background.png");
   }
-  
+}
   // Media queries pour les écrans de bureau de grande taille (largeur minimale de 1280px)
   @media only screen and (min-width: 1280px) {
     // Placez vos styles pour les écrans de bureau de grande taille ici
