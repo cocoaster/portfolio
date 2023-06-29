@@ -111,10 +111,10 @@ const NavBar = () => {
             </li>
           </ul>
           {/* Hamburger Menu */}
-          <div className="hamburger flex md:hidden " >
+          <div className="hamburger mt-2 flex md:hidden " >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className={`w-6 h-6  cursor-pointer ${isMenuOpen ? 'hidden' : ''}`}
+              className={`w-10 h-10  cursor-pointer ${isMenuOpen ? 'hidden' : ''}`}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -129,7 +129,7 @@ const NavBar = () => {
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className={`w-6 h-6 cursor-pointer  ${isMenuOpen ? '' : 'hidden'}`}
+              className={`w-10 h-10 cursor-pointer  ${isMenuOpen ? '' : 'hidden'}`}
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
