@@ -1,3 +1,9 @@
+$color1: #0a2f2a;
+$color2: #9fdad3;
+$color3: #7daca6;
+
+$font1: 'Segoe UI', sans-serif;
+
 *,
 ::before,
 ::after {
@@ -7,7 +13,7 @@
 }
 
 :root{
-    background-image: url("../public/green_mobile_background.png");
+    background-image: url("/assets/green_mobile_background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -16,7 +22,7 @@
     height: 100%;
     width: 100%;
     display: table;
-  
+    font-family: $font1;
   }
 
   body {
@@ -32,13 +38,10 @@
     margin-top: 100px;
    }
  
-   $color1: #0a2f2a;
-   $color2: #9fdad3;
-   $color3: #7daca6;
-
+  
 //   main {
 //     position: relative;
-//     background-image: url("../public/green_mobile_background.png");
+//     background-image: url("/green_mobile_background.png");
 //     background-repeat: no-repeat;
 //    background-size: cover;
 //    background-position: center;
@@ -56,7 +59,7 @@
   // Media query pour les tablettes en mode portrait (largeur minimale de 768px)
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   :root{
-    background-image: url("../public/green_tablet_background.png");
+    background-image: url("/assets/green_tablet_background.png");
     background-size: contain;
     background-position: left;
 
@@ -71,13 +74,20 @@
   // Media queries pour les écrans de bureau de taille moyenne (largeur minimale de 1025px)
   @media only screen and (min-width: 1025px) {
     :root{
-      background-image: url("../public/green_desktop_background.png");
+      background-image: url("/assets/green_desktop_background.png");
+      background-size: contain;
+      background-position: left;
+  
   }
 }
   // Media queries pour les écrans de bureau de grande taille (largeur minimale de 1280px)
   @media only screen and (min-width: 1280px) {
-    // Placez vos styles pour les écrans de bureau de grande taille ici
-  }
+    :root{
+      background-image: url("/assets/green_desktop_background.png");
+      background-size: 40% 100%;
+      background-position: left;
+  
+  } }
  
   
 

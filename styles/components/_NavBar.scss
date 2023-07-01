@@ -15,12 +15,10 @@ nav{
   padding: 1rem;
   color: $color1;
 }
- .hamburger{
- } 
+
  .hamburger-menu{
  position: absolute;
-
-margin-top:70px;
+ margin-top:70px;
  left: 0;
  right: 0;
  transform: translateX(40px);
@@ -35,10 +33,10 @@ margin-top:70px;
  }
  .bg{
     border-top: #5c7f7b solid 7px;
-    background-color: $color3;
-    color: #0d383d;
-  margin-left: -25px;
-  padding-left: 49px;
+    background-color: #7daca6;
+    color: $color1;
+    margin-left: -25px;
+    padding-left: 49px;
  }
 
  li:hover {

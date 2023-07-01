@@ -12,6 +12,12 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontSize: {
+        base: '1.4rem',
+             // Taille de police grande
+        xl: '2.3rem',      // Taille de police très grande
+        /* Autres tailles de police personnalisées */
+      },
     },
   },
   plugins: [],

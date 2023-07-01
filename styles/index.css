@@ -1,14 +1,36 @@
+@import url("https://fonts.cdnfonts.com/css/segoe-ui-4");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 :root {
-  background-image: url("../public/green_mobile_background.png");
+  background-image: url("/assets/green_mobile_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-position: 0 0;
+  height: 100%;
+  width: 100%;
+  display: table;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
+  margin: 0;
   overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative;
+}
+
+main {
+  margin-top: 100px;
 }
 
 /* navMenu{
@@ -17,62 +39,94 @@ body {
 }
 
 */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  :root {
+    background-image: url("/assets/green_tablet_background.png");
+    background-size: contain;
+    background-position: left;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  :root {
+    background-image: url("/assets/green_desktop_background.png");
+    background-size: contain;
+    background-position: left;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  :root {
+    background-image: url("/assets/green_desktop_background.png");
+    background-size: 40% 100%;
+    background-position: left;
+  }
+}
 .logo {
-  position: absolute;
-  top: 2rem;
   padding-left: 1rem;
 }
 
-.nav {
+h1 {
+  color: #0a2f2a;
+}
+
+header {
+  width: 100%;
+  height: 100px;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: #0a2f2a;
 }
 
-.hamburger {
-  color: #0a2f2a;
-}
-
-.items > .sub-items {
-  display: none;
-}
-.items > .sub-items:hover {
-  display: block;
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
   cursor: pointer;
   padding: 1rem;
-  z-index: 10;
+  color: #0a2f2a;
 }
 
-.nav-active {
-  color: #116353;
+.hamburger-menu {
+  position: absolute;
+  margin-top: 70px;
+  left: 0;
+  right: 0;
+  transform: translateX(40px);
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #445d5a;
+  width: 100%;
+  line-height: 80px;
+  color: #9fdad3;
 }
 
-ul:hover li:not(:hover) {
-  opacity: 0.5;
+.bg {
+  border-top: #5c7f7b solid 7px;
+  background-color: #7daca6;
+  color: #0a2f2a;
+  margin-left: -25px;
+  padding-left: 49px;
 }
 
-ul:hover li:hover {
-  color: #21b295;
+li:hover {
+  opacity: 0.6;
 }
 
-.nav-portfolio {
-  cursor: pointer;
-  display: flex;
-  transition: 0.5s;
+.portfolio-arrow {
+  margin-top: 0.1rem;
+  margin-left: 100px;
+  transform: rotate(-90deg);
 }
-.nav-portfolio:hover .nav-projects,
-.nav-portfolio .nav-projects:hover {
-  visibility: visible;
-  opacity: 1;
+
+.openPortfolio-arrow {
+  margin-top: 2.1rem;
+  margin-left: 50px;
+  transform: rotate(0deg);
 }
-.nav-portfolio:hover .nav-projects li,
-.nav-portfolio .nav-projects:hover li {
-  transform: rotatey(0deg);
+
+.bullet-point {
+  margin-right: 2rem;
 }
 
 .nav-projects {
@@ -81,27 +135,32 @@ ul:hover li:hover {
   opacity: 0;
   padding: 0 40px;
   width: 300px;
-  transform: translateX(-140px);
   transition: 0.3s;
   perspective: 500px;
 }
-.nav-projects li {
-  transform: rotatey(30deg) scaleX(1.2);
-  transform-origin: center;
-  transition: 0.3s;
+.nav-projects:hover {
+  visibility: visible;
+  opacity: 1;
 }
 
 .mobileNav-projects {
-  position: absolute;
+  display: block;
   opacity: 1;
   padding: 0 40px;
   width: 300px;
-  transform: translateX(-140px);
-  transition: 0.3s;
-  z-index: 30;
 }
-.mobileNav-projects li {
-  transform: rotatey(30deg) scaleX(1.2);
-  transform-origin: center;
-  transition: 0.3s;
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .nav-active {
+    color: #5c7f7b;
+  }
+}
+footer {
+  height: 1;
+  display: table-row;
+}
+
+.footer-logo {
+  width: auto;
+  height: auto;
 }/*# sourceMappingURL=index.css.map */
