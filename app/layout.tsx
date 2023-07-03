@@ -24,7 +24,7 @@ export default function RootLayout({
       <body >
       <NavBar />
 
-        <main >
+        <main className='' >
         <Mouse />
         {/* <Logo/> */}
           {children}

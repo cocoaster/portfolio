@@ -15,7 +15,7 @@ module.exports = {
       fontSize: {
         base: '1.4rem',
              // Taille de police grande
-        xl: '2.3rem',      // Taille de police très grande
+        lg: '2.3rem',      // Taille de police très grande
         /* Autres tailles de police personnalisées */
       },
     },

@@ -1,6 +1,7 @@
  header{
  width: 100%;
  height: 100px;
+ background-color: #9fdad3;
  position : fixed;
  }
 
@@ -92,6 +93,10 @@ nav{
 
        // Media query pour les tablettes en mode portrait (largeur minimale de 768px)
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  nav{
+    width: 54.2%;
+  }
+  
   .nav-active {
     color: #5c7f7b;
   }
