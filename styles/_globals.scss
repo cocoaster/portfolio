@@ -69,8 +69,10 @@ $font2: 'Segoe UI Semilight', sans-serif;
   
   // Media queries pour les tablettes (largeur maximale de 1024px)
 @media only screen and (max-width: 1024px) {
-    // Placez vos styles pour les tablettes ici
-  }
+:root{
+  z-index: 5;
+
+}  }
   
   // Media queries pour les écrans de bureau de taille moyenne (largeur minimale de 1025px)
   @media only screen and (min-width: 1025px) {
@@ -78,7 +80,8 @@ $font2: 'Segoe UI Semilight', sans-serif;
       background-image: url("/assets/green_desktop_background.png");
       background-size: contain;
       background-position: left;
-  
+      z-index: 5;
+
   }
 }
   // Media queries pour les écrans de bureau de grande taille (largeur minimale de 1280px)
@@ -87,7 +90,8 @@ $font2: 'Segoe UI Semilight', sans-serif;
       background-image: url("/assets/green_desktop_background.png");
       background-size: 40% 100%;
       background-position: left;
-  
+      z-index: 5;
+position: relative;
   } }
  
   

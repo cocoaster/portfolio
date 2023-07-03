@@ -106,15 +106,25 @@ nav{
 
 // Media queries pour les tablettes (largeur maximale de 1024px)
 @media only screen and (max-width: 1024px) {
-
+  nav{
+    width: 54.2%;
+    height: 192px;
+  }
 }
 
 // Media queries pour les écrans de bureau de taille moyenne (largeur minimale de 1025px)
 @media only screen and (min-width: 1025px) {
-  // Placez vos styles pour les écrans de bureau de taille moyenne ici
-}
+  nav{
+    width: 54.2%;
+    height: 192px;
+  }}
 
 // Media queries pour les écrans de bureau de grande taille (largeur minimale de 1280px)
 @media only screen and (min-width: 1280px) {
-  // Placez vos styles pour les écrans de bureau de grande taille ici
-}
+  header{
+    z-index: 10px;
+  }
+  nav{
+    width: 60%;
+    height: 192px;
+  }}

@@ -9,17 +9,17 @@ export default function Home() {
   return (
     <>
     <div className="main-home h-auto flex flex-col mx-4 lg:flex-row ">
-      <section className='mt-20 md:w-2/5 md:mr-44 md:mx-4'>
-      <sub className="blockquote text-xl  mt-20">Élégance, efficacité, professionnalisme</sub>
-      <p className='BusinessScript mt-8 '>Notre agence met ses talents à votre disposition pour relier le monde à vos services avec un design sur mesure pour une communication impactante.</p>
+      <section className='mt-20 md:w-2/5 md:mr-44 md:mx-4 xl:mt-56 xl:pl-6'>
+      <sub className="blockquote text-xl  mt-20 xl:text-3xl xl:pt-80 ">Élégance, efficacité, professionnalisme</sub>
+      <p className='BusinessScript mt-16 xl:text-3xl xl:pr-16 xl:mt-32 xl:mb:48'>Notre agence met ses talents à votre disposition pour relier le monde à vos services avec un design sur mesure pour une communication impactante.</p>
       </section>
       <video className='mt-16 mb-10 bg-[length:200px_100px] bg-gray-950   md:w-2/5 md:ml-3'>
       </video>
       </div>
-      <section className='mt-10 flex flex-col md:flex-row md:w-full'>
-        <div className="green-bottom-section ">
+      <section className='mt-10 flex flex-col md:flex-row md:w-full xl:mt-0  xl:items-start'>
+        <div className="green-bottom-section flex flex-col xl:flex-col-reverse   ">
           <CallToAction />
-          <p className="forWho mx-4 mb-16 px-4 py-6 opacity-60 font-bold w-fit h-auto">
+          <p className="forWho mx-4 mb-16 px-4 py-6 opacity-60 font-bold w-fit h-auto xl:mx-6 xl:px-10 xl:mt-48 xl:mb-40">
           Avec notre expertise et notre engagement à fournir des services 
   de qualité supérieure, notre agence est l'endroit idéal pour toute 
   entreprise, institution, pour toute compagnie, artiste, artisan ou 
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div className="white-bottom-section bg-white pb-16 px-8 ">
           <div className="service-offers">
-            <h2>CRÉATION DE SITES  
+            <h2 className="title-services">CRÉATION DE SITES  
 INTERNETS</h2>
             <Image
             src="/ICONbLACKlogo.svg"
@@ -53,7 +53,7 @@ responsives,  garantissant une expérience utilisateur
 optimale sur tous les navigateurs et supports.</p>
           </div>
           <div className="service-offers">
-            <h2>RÉALISATION DE TEASERS
+            <h2 className="title-services">RÉALISATION DE TEASERS
 VIDÉOS  & MOTION DESIGN</h2>
             <Image
             src="/ICONbLACKlogo.svg"
@@ -77,7 +77,7 @@ besoins spécifiques.
 </p>
           </div>
           <div className="service-offers">
-            <h2>RÉFÉRENCEMENT NATUREL</h2>
+            <h2 className="title-services">RÉFÉRENCEMENT NATUREL</h2>
             <Image
             src="/ICONbLACKlogo.svg"
             alt="Ometheo Logo"
@@ -97,7 +97,7 @@ stratégie adaptée et efficace pour augmenter le trafic
 vers votre site web.</p>
           </div>
           <div className="service-offers">
-            <h2>MAINTENANCE</h2>
+            <h2 className="title-services">MAINTENANCE</h2>
             <Image
             src="/ICONbLACKlogo.svg"
             alt="Ometheo Logo"
