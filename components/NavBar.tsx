@@ -31,10 +31,10 @@ const NavBar = () => {
     handlePortfolioSubMenu();
   };
   return ( 
-    <header className="h-auto z-10">
+    <header className=" z-10">
       <div className="navigation">
         <Logo />
-        <nav className="md:px-4 md:py-8 md:bg-white md:flex md:justify-end">
+        <nav className="md:px-4 md:py-8 md:bg-white md:flex md:justify-end md:h-auto">
           <ul className="hidden space-x-8  md:flex ">
             <li >
               <Link href="/" className={currentRoute === "/" ? "nav-active" : ""}>

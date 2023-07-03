@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <>
     <div className="main-home h-auto flex flex-col mx-4 lg:flex-row ">
-      <section className='mt-20 md:w-2/5 md:mr-44'>
+      <section className='mt-20 md:w-2/5 md:mr-44 md:mx-4'>
       <sub className="blockquote text-xl  mt-20">Élégance, efficacité, professionnalisme</sub>
       <p className='BusinessScript mt-8 '>Notre agence met ses talents à votre disposition pour relier le monde à vos services avec un design sur mesure pour une communication impactante.</p>
       </section>
       <video className='mt-16 mb-10 bg-[length:200px_100px] bg-gray-950   md:w-2/5 md:ml-3'>
       </video>
       </div>
-      <section className='mt-10 flex flex-col md:flex-row'>
+      <section className='mt-10 flex flex-col md:flex-row md:w-full'>
         <div className="green-bottom-section ">
           <CallToAction />
           <p className="forWho mx-4 mb-16 px-4 py-6 opacity-60 font-bold w-fit h-auto">
@@ -30,7 +30,7 @@ export default function Home() {
   budget.
           </p>
         </div>
-        <div className="white-bottom-section bg-white py-16 md:px-8 ">
+        <div className="white-bottom-section bg-white pb-16 px-8 ">
           <div className="service-offers">
             <h2>CRÉATION DE SITES  
 INTERNETS</h2>
