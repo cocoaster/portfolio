@@ -69,10 +69,7 @@ nav{
       padding: 0 40px;
       width: 300px;
       transition: .3s ;
-      perspective: 500px;
-
-    
-    
+      perspective: 500px; 
     &:hover  {
 
       visibility: visible;
@@ -100,11 +97,12 @@ nav{
   .nav-active {
     color: #5c7f7b;
   }
+
 } 
 
 // Media queries pour les tablettes (largeur maximale de 1024px)
 @media only screen and (max-width: 1024px) {
-  // Placez vos styles pour les tablettes ici
+
 }
 
 // Media queries pour les écrans de bureau de taille moyenne (largeur minimale de 1025px)

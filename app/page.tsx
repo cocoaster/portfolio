@@ -11,8 +11,7 @@ export default function Home() {
     <div className="main-home h-auto flex flex-col mx-4 lg:flex-row ">
       <section className='mt-20 md:w-2/5 md:mr-44'>
       <sub className="blockquote text-xl  mt-20">Élégance, efficacité, professionnalisme</sub>
-      <p className='BusinessScript mt-8 text-xl'>Notre agence met ses talents à votre disposition pour relier le monde à vos services avec un design 
-          sur mesure pour une communication impactante.</p>
+      <p className='BusinessScript mt-8 '>Notre agence met ses talents à votre disposition pour relier le monde à vos services avec un design sur mesure pour une communication impactante.</p>
       </section>
       <video className='mt-16 mb-10 bg-[length:200px_100px] bg-gray-950   md:w-2/5 md:ml-3'>
       </video>
@@ -40,11 +39,11 @@ INTERNETS</h2>
             alt="Ometheo Logo"
             width={45}
             height={30}
-            className="logo md:w-16 "
+            className="bullet-logo md:w-12 "
               priority={true}   >
               
             </Image>
-            <p>Nous vous offrons une expertise dans la création 
+            <p className="web-services">Nous vous offrons une expertise dans la création 
 de sites web, de boutiques en ligne et d’applications 
 avec des designs soignés, dynamiques, performants, 
 originaux et modernes, adaptés aux besoins et aux 
@@ -61,11 +60,11 @@ VIDÉOS  & MOTION DESIGN</h2>
             alt="Ometheo Logo"
             width={45}
             height={30}
-            className="logo md:w-16 "
+            className="bullet-logo md:w-12 "
               priority={true}   >
               
             </Image>
-            <p>Nous proposons également à nos clients des solutions 
+            <p className="web-services">Nous proposons également à nos clients des solutions 
 uniques pour  vous aider  à présenter votre entreprise 
 sous forme de reportages  publicitaires  vidéos,  ou sous 
 forme d’animations pour une présentation plus 
@@ -84,11 +83,11 @@ besoins spécifiques.
             alt="Ometheo Logo"
             width={45}
             height={30}
-            className="logo md:w-16"
+            className="bullet-logo md:w-12"
               priority={true}   >
               
             </Image>
-            <p>Nous vous proposons nos  services et nos conseils 
+            <p className="web-services">Nous vous proposons nos  services et nos conseils 
 d’optimisation SEO pour vous aider à améliorer la 
 visibilité de votre site internet auprès de votre clientèle 
 cible sur tous les moteurs de recherche.
@@ -104,11 +103,11 @@ vers votre site web.</p>
             alt="Ometheo Logo"
             width={45}
             height={30}
-            className="logo md:w-16 "
+            className="bullet-logo md:w-12 "
               priority={true}   >
               
             </Image>
-            <p>Nous vous offrons également des forfaits adaptés pour 
+            <p className="web-services">Nous vous offrons également des forfaits adaptés pour 
 assurer la maintenance de votre site afin de  garantir sa
 performance au niveau technique, au niveau de son 
 référencement et de sa  sécurité dans le temps. Nos 
