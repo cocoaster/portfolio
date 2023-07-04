@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className='bg-black   w-full h-64 '>
-            <div className=" mt-20 ">
+        <footer className='bg-black   w-full h-64 md:h-48 '>
+            <div className=" mt-10 ">
                 <Link href="/" className="object-contain">
-                    <Image src="/Ometheo_White_Logo.png"
-          alt="Ometheo Logo" width={170} height={170} className="footer-logo m-auto " priority={true}
+                    <Image src="/OmetheoWhiteWholeLogo.svg"
+          alt="Ometheo Logo" width={4} height={4} className="footer-logo m-auto " priority={true}
         />
           </Link>   
             </div>

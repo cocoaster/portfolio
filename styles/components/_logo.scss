@@ -1,7 +1,8 @@
 
 .logo-container{
     background-color: #9fdad3;
-
+height: 91px;
+width: 45.8%;
 }
 .logo{
    
@@ -9,4 +10,17 @@
 }
 h1{
     color: $color1;
+}
+
+@media only screen and (min-width: 1280px) {
+    
+.logo-container{
+
+height: 173px;
+width: 40%;
+}
+h1{
+    letter-spacing: 0.6rem;
+    padding-left: 1.1rem;
+}
 }

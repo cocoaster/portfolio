@@ -13,7 +13,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontSize: {
-        base: '1.4rem',
+        base: '1.1rem',
              // Taille de police grande
         lg: '2.3rem',      // Taille de police très grande
         /* Autres tailles de police personnalisées */

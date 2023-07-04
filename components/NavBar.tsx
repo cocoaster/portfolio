@@ -112,7 +112,7 @@ const NavBar = () => {
             </li>
           </ul>
           {/* Hamburger Menu */}
-          <div className="hamburger mt-2 flex md:hidden " >
+          <div className="hamburger mt-5 flex md:hidden " >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className={`w-10 h-10  cursor-pointer ${isMenuOpen ? 'hidden' : ''}`}
