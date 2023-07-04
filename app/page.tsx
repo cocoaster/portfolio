@@ -13,7 +13,7 @@ export default function Home() {
       <sub className="blockquote text-base  mt-5 xl:text-3xl xl:pt-80 ">Élégance, efficacité, professionnalisme</sub>
       <p className='BusinessScript mt-16 xl:text-3xl xl:pr-16 xl:mt-32 xl:mb:48'>Notre agence met ses talents à votre disposition pour relier le monde à vos services avec un design sur mesure pour une communication impactante.</p>
       </section>
-      <video className='mt-16 mb-10 bg-[length:200px_100px] bg-gray-950   md:w-2/5 md:ml-3'>
+      <video className='mt-16 mb-10 bg-[length:200px_100px] bg-gray-950   md:w-2/5 md:ml-4'>
       </video>
       </div>
       <section className='mt-10 flex flex-col md:flex-row md:w-full md:items-start xl:mt-0  xl:items-start'>
